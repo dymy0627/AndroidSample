@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Andy Sample</string>
+    <string name="go_domo">Go DoMo</string>
+    <string name="go_animation">Go Animation</string>
+    <string name="go_facebook">Go Facebook</string>
+    <string name="hello_world">Hello world!</string>
+    <!--DoMo-->
+    <string name="domo_s_house">DoMo\'s House</string>
+    <string name="domo_say_something">Say something..</string>
+    <string name="domo_send_btn">Send</string>
+    <string name="domo_free_btn">Free</string>
+    <!--FB -->
+    <string name="facebook_app_id">1360601540680197</string>
+    <string name="fb_login_protocol_scheme">fb1360601540680197</string>
+    <string name="fb_login">Login</string>
+    <string name="fb_logout">Logout</string>
+</resources>
