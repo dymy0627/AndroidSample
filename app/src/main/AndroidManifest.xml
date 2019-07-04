@@ -21,10 +21,14 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".animation.AnimMainActivity"></activity>
+        <activity android:name=".exoplayer.ExoPlayerDemoActivity" />
+        <activity android:name=".exoplayer.ExoPlayerActivity" />
+        <activity android:name=".exoplayer.dash.DashPlayerActivity" />
+        <activity android:name=".exoplayer.hls.HlsPlayerActivity" />
+
+        <activity android:name=".animation.AnimMainActivity" />
 
         <activity android:name=".domo.WelcomeActivity" />
-
         <activity
             android:name=".domo.HomeActivity"
             android:windowSoftInputMode="adjustResize" />

@@ -4,28 +4,29 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <Button
-        android:id="@+id/main_exo_btn"
-        android:layout_width="match_parent"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:padding="10dp"
         android:text="@string/demo_exo_player" />
 
     <Button
-        android:id="@+id/main_domo_btn"
+        android:id="@+id/exo_player_mp4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/go_domo" />
+        android:text="MP4"
+        android:textAllCaps="false" />
 
     <Button
-        android:id="@+id/main_anim_btn"
+        android:id="@+id/exo_player_hls"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/go_animation" />
+        android:text="HLS" />
 
     <Button
-        android:id="@+id/main_facebook_btn"
+        android:id="@+id/exo_player_dash"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/go_facebook" />
+        android:text="DASH" />
 
 </LinearLayout>

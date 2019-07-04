@@ -8,6 +8,7 @@ import android.widget.Button;
 
 import com.example.yulin.animation.AnimMainActivity;
 import com.example.yulin.domo.WelcomeActivity;
+import com.example.yulin.exoplayer.ExoPlayerDemoActivity;
 import com.example.yulin.facebook.FBMainActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,27 +18,33 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Button exoPlayerButton = (Button) findViewById(R.id.main_exo_btn);
         Button domoButton = (Button) findViewById(R.id.main_domo_btn);
         Button animButton = (Button) findViewById(R.id.main_anim_btn);
         Button facebookButton = (Button) findViewById(R.id.main_facebook_btn);
 
+        exoPlayerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, ExoPlayerDemoActivity.class);
+                startActivity(intent);
+            }
+        });
         domoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
                 intent.setClass(MainActivity.this, WelcomeActivity.class);
                 startActivity(intent);
-                finish();
             }
         });
-
         animButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
                 intent.setClass(MainActivity.this, AnimMainActivity.class);
                 startActivity(intent);
-                finish();
             }
         });
         facebookButton.setOnClickListener(new View.OnClickListener() {
@@ -46,7 +53,6 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent();
                 intent.setClass(MainActivity.this, FBMainActivity.class);
                 startActivity(intent);
-                finish();
             }
         });
     }
